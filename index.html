@@ -1,39 +1,114 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pagina Inmobiliaria</title>
-    <link rel="stylesheet" href="/css/estilo.css">
-</head>
-<body>
-<head class="header">
-    <div class="logo">
-        <h1>Logo</h1>
-    </div>
-    <nav class="menu">
-        <ul class="menu-lista">
-            <li>inicio</li>
-            <li>acerca</li>
-            <li>servicios</li>
-            <li>blog</li>
-            <li>propiedades</li>
-            <li>contactanos</li>            
-        </ul>        
-    </nav>
-    <div class="">
-        <h2>Lista Prod</h2>
-        <button>Ingresar</button>
-    </div>
-    
-</head>
-<section>
-
-</section>
-
-
-
+    <meta name="description" content="PARA INMOBILIARIA" />
+    <meta name="author" content="Robert Ocampo" />
+    <meta name="keywords" content="Robert Ocampo" />
+    <link rel="shortcut icon" href="/imagenes/Logo.gif" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Poppins:wght@300;400;600&family=Ubuntu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/fontawesone/all.css"/>
+    <link rel="stylesheet" href="/css/fontawesone/regular.css"/>
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/estilo.css" />
+  </head>
+  <body>
+    <!--Inicio del Header Logo, menu, ingreso-->
+    <header class="contenedor header">
+      <div class="logo">
+        <img src="/imagenes/Logo.gif" alt="logo" />
+      </div>
+      <nav class="menu">
+        <ul>
+          <li>Inicio</li>
+          <li>Acerca</li>
+          <li>Servicios</li>
+          <li>Blog</li>
+          <li>Propiedades</li>
+          <li>Contactanos</li>
+        </ul>
+      </nav>
+      <div class="ingreso">
+        <ul>
+          <li>Mi Lista</li>
+          <li><a class="boton" href=""><i class="fa-solid fa-right-to-bracket"></i></i>Ingresar</a></li>
+        </ul>
+      </div>
+    </header>
+    <!--Termina sección del header-->
+    <!--Inicia sección de la Imagen y busqueda-->
+    <section class="sub-header">
+        <div class="contenedor ">
+            <div class="titulo">
+                <h1>Buscas Una Propiedad</h1>
+                <p>
+                  Aqui encontraras <span>Tu nueva o próxima propiedad en la</span> localidad de Tu
+                  preferencia
+                </p>
+              </div>
+              <div class="buscar">
+                <form action="" class="form-buscar">
+                  <div class="tipo-busqueda">
+                    <label for="">Ciudad/Dirección</label>
+                    <input type="text" placeholder="Localidad" />
+                  </div>
+                  <div class="tipo-busqueda">
+                    <label for="">Tipo/Propiedad</label>
+                    <input type="text" placeholder="Tipo Propiedad" /></div>
+                  <div class="tipo-busqueda">
+                    <label for="">Rango de Precio</label>
+                    <input type="text" placeholder="Rango de precio"/>
+                  </div>
+                  <div class="tipo-busqueda"> 
+                    <p>Busqueda Avanzada</p>
+                    <li><img src="/imagenes/iconos/buscar.png" alt="buscar" /></li>
+                  </div>      
+                 
+                </form>
+              </div>
+        </div>
+      
+    </section>
+    <!--Termina sección de imagen y busqueda-->
+    <!--Sección de resumen propiedades-->
+    <section class="contenedor">
+      <div class="res-propiedades">
+        <div class="tarjeta">
+          <img src="/imagenes/iconos/casaPlaya.png" alt="vacacional" />
+          <h4>Casa Vacacional</h4>
+          <p>80 propiedades</p>
+        </div>
+        <div class="tarjeta">
+          <img src="/imagenes/iconos/casa.png" alt="casas" />
+          <h4>Casas</h4>
+          <p>120 propiedades</p>
+        </div>
+        <div class="tarjeta">
+          <img src="/imagenes/iconos/departamentos.png" alt="departamentos" />
+          <h4>Departamentos</h4>
+          <p>200 propiedades</p>
+        </div>
+        <div class="tarjeta">
+          <img src="/imagenes/iconos/oficina.png" alt="Oficina y Estudio" />
+          <h4>Oficina y Estudio</h4>
+          <p>50 propiedades</p>
+        </div>
+        <div class="tarjeta">
+          <img src="/imagenes/iconos/villa.png" alt="villa" />
+          <h4>Villa</h4>
+          <p>100 propiedades</p>
+        </div>
+      </div>
+    </section>
+    <!--Fin sección resume propiedades-->
 
     <script src="/js/main.js"></script>
-</body>
+  </body>
 </html>

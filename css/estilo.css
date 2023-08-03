@@ -1,0 +1,133 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.58%; /* Reset para REMS: 62.5% = 10px de 16px; 1rem = 10px */
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+    background-color: #8fb436;
+}
+/*GLOBALES*/
+
+.contenedor{
+    max-width: 120rem;
+    width: 95%;
+    margin: 0 auto;
+}
+h1,h2,h3,h4{
+    font-family: 'Poppins', sans-serif;    
+}
+h1{
+    font-size: 4.8rem;
+}
+h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 3.2rem;
+}
+h4{
+    font-size: 2.8rem;
+}
+img{
+    max-width: 100%;
+}
+.boton{
+    padding: 2rem;
+    border: 2rem;
+    border-radius: 1rem;
+    color: #182745;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    width: 10%;
+}
+
+.menu{
+    display: flex;
+}
+.menu ul li{
+    display: inline;
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    color: #182745;
+    margin-left: 2rem;    
+}
+.ingreso ul li{
+    display: inline;
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    color: #182745;
+    margin-left: 2rem;
+}
+.sub-header{
+    /*display: flex;*/
+    height: 50rem;
+    background-image: url(/imagenes/principal7.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 6rem;
+    /*flex-direction: column;*/
+    /*justify-content: end;
+    align-items: end;*/
+}
+.cont-sub-header{
+    margin-top: 5rem;
+}
+.titulo{
+    margin-bottom: 3rem;
+}
+.titulo h1{
+    line-height: 0rem;
+    margin-bottom: 3rem;
+    color: #182745;
+    text-align: center;
+}
+.titulo p{
+    font-family: 'Poppins', sans-serif;
+    color: #182745;
+    font-size: 1.2rem;
+    text-align: center;
+}
+p span{
+    color: #8fb436;
+}
+.buscar{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 1rem;
+    font-family: 'Poppins', sans-serif; 
+}
+.form-buscar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1.3rem;
+    
+}
+.tipo-busqued{
+    display: flex;
+    flex-direction: column;
+}
+.tipo-busqueda li{
+    list-style: none;
+}
+.tipo-busqueda p{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
