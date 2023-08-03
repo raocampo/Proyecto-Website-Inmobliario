@@ -10,8 +10,9 @@ body{
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.6rem;
     line-height: 2;
-    background-color: #8fb436;
+    /*background-color: #8fb436;*/
 }
+
 /*GLOBALES*/
 
 .contenedor{
@@ -34,6 +35,9 @@ h3{
 h4{
     font-size: 2.8rem;
 }
+h5{
+    font-size: 1.5rem;
+}
 img{
     max-width: 100%;
 }
@@ -44,10 +48,13 @@ img{
     color: #182745;
 }
 
+/*SECCIÓN HEADER Y MENÚ*/
+
 .header{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: #8fb436;
 }
 .logo{
     width: 10%;
@@ -72,24 +79,28 @@ img{
     color: #182745;
     margin-left: 2rem;
 }
+
+/*SECCION SUB-HEADER*/
+
 .sub-header{
-    /*display: flex;*/
     height: 50rem;
     background-image: url(/imagenes/principal7.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    margin-bottom: 6rem;
-    /*flex-direction: column;*/
-    /*justify-content: end;
-    align-items: end;*/
 }
 .cont-sub-header{
-    margin-top: 5rem;
+    position: absolute;
+    top: 28rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
 }
 .titulo{
     margin-bottom: 3rem;
 }
 .titulo h1{
+    font-size: 6rem;
     line-height: 0rem;
     margin-bottom: 3rem;
     color: #182745;
@@ -101,11 +112,10 @@ img{
     font-size: 1.2rem;
     text-align: center;
 }
-p span{
-    color: #8fb436;
-}
+
+/*SECCIÓN BUSCAR*/
+
 .buscar{
-    display: flex;
     width: 90%;
     margin: 0 auto;
     background-color: #fff;
@@ -113,21 +123,74 @@ p span{
     font-family: 'Poppins', sans-serif; 
 }
 .form-buscar{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1rem;
     font-size: 1.3rem;
-    
+    color: #182745;
 }
-.tipo-busqued{
+.tipo-busqueda{
+    width: 100%;
+    height: 8rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    border-right: #1827452c 0.1rem solid;
 }
-.tipo-busqueda li{
-    list-style: none;
+.tipo-busqueda input{
+    padding: 1.3rem;
+    border: #1827452c 0.1rem solid;
+    border-radius: 1rem;
+    opacity: 0.6;
 }
-.tipo-busqueda p{
+.busqueda-avanzada{
+    display: flex;
+    width: 100%;
+    padding-left: 2rem;
+    align-items: center;
+}
+.busqueda-avanzada p{
+    margin-right: 3rem;
     font-size: 1.3rem;
     font-weight: 500;
 }
+.busqueda-avanzada li{
+    list-style: none;
+    background-color: #d3dae986;
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+.busqueda-avanzada img{
+    width: 90%;
+}
+
+/*SECCION RESUMEN PROPIEDADES*/
+
+.resume-prop{
+    width: 100%;
+    height: 35rem;
+    background-color: #8eb43642;
+}
+/*.titulo{
+    position: absolute;
+    /*top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}*/
+.titulo h3{
+    line-height: 0rem;
+    /*margin-top: 3rem;*/
+    margin-bottom: 2rem;
+    color: #182745;
+    text-align: center;
+}
+
+.res-propiedades{
+    display: flex;
+    justify-content: space-around;
+}
+
