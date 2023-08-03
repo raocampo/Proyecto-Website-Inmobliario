@@ -40,12 +40,16 @@ h5{
 }
 img{
     max-width: 100%;
+    /*display: block;*/
 }
 .boton{
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    background-color: #182745;
     padding: 2rem;
-    border: 2rem;
     border-radius: 1rem;
-    color: #182745;
+    color: #8fb436;
+    cursor: pointer;
 }
 
 /*SECCIÓN HEADER Y MENÚ*/
@@ -71,6 +75,16 @@ img{
     color: #182745;
     margin-left: 2rem;    
 }
+.menu a{
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    color: #182745;
+}
+.menu a:hover{
+    color: #fff;
+    border-radius: 1rem;
+}
 .ingreso ul li{
     display: inline;
     list-style: none;
@@ -79,6 +93,18 @@ img{
     color: #182745;
     margin-left: 2rem;
 }
+
+.ingreso a{
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    color: #182745;
+}
+.ingreso a:hover{
+    color: #fff;
+    border-radius: 1rem;
+}
+
 
 /*SECCION SUB-HEADER*/
 
@@ -111,6 +137,10 @@ img{
     color: #182745;
     font-size: 1.2rem;
     text-align: center;
+}
+
+.boton:hover{
+    color: #fff;
 }
 
 /*SECCIÓN BUSCAR*/
@@ -173,24 +203,127 @@ img{
     width: 100%;
     height: 35rem;
     background-color: #8eb43642;
-}
-/*.titulo{
-    position: absolute;
-    /*top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}*/
-.titulo h3{
-    line-height: 0rem;
-    /*margin-top: 3rem;*/
-    margin-bottom: 2rem;
-    color: #182745;
     text-align: center;
+}
+.titulo h3, p{
+    color: #182745; 
 }
 
 .res-propiedades{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+}
+.tarjeta{
+    background-color: #1827452c;
+    border-radius: 1rem;
+    padding: 2rem 4rem;
+    margin: 2rem;
+    box-shadow: -0.3rem -0.3rem 1rem #8eb4365b;
 }
 
+.tarjeta a{
+    text-decoration: none;
+    color: #182745;
+}
+.tarjeta h5 p{
+    color: #182745;
+}
+/*SECCION VENTA DE PROPIEDADES*/
+.titulo-prop{
+    width: 50%;
+    text-align: center;
+    color: #182745;
+}
+.titulo-prop h3{
+    margin-bottom: 1rem;
+}
+.titulo-prop p{
+    /*padding: 3rem;*/
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
+
+}
+
+.propiedades{
+    /*height: 70rem;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #8fb436;
+}
+.tarjeta-propiedades{
+    display: flex;    
+    gap: 2rem;
+}
+.sub-tarjeta-propiedades{
+    width: 100%;
+    background-color: #18274515;
+    object-fit: cover;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+}
+.texto-propiedad{
+   font-family: 'Ubuntu', sans-serif;
+   padding: 0 2rem;
+   margin-bottom: 2rem;
+}
+.texto-propiedad h5{
+    line-height: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #182745;
+}
+.texto-propiedad p{
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #1827457a;
+}
+.venta{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 2rem 0;
+}
+.venta h6{
+    background-color: #d4dceb41;
+    padding: 0.3rem 0.8rem;
+    border-radius: 0.7rem;
+    color: #3a3b37;
+}
+.precio{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    color: #182745;
+    font-size: 2.5rem;
+    margin: 2rem 0rem;
+    border-top: #1827452c 0.2rem solid;
+}
+.boton-sec{
+    background-color: #182745;
+    color: #fff;
+    font-size: 2rem;
+    margin-top: 2rem;
+    padding:  2rem 1rem;
+    border: none;
+    border-radius: 5rem;
+    cursor: pointer;
+}
+
+.arriendo{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 2rem 0;
+}
+.arriendo h6{
+    background-color: #d4dceb41;
+    padding: 0.3rem 0.8rem;
+    border-radius: 0.7rem;
+    color: #3a3b37;
+}
+
+.contenido{
+    background-color: #182745;
+    text-align: center;
+}

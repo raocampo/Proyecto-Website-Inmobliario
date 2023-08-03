@@ -1,129 +1,289 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina Inmobiliaria</title>
+    <meta name="description" content="PARA INMOBILIARIA" />
+    <meta name="author" content="Robert Ocampo" />
+    <meta name="keywords" content="Robert Ocampo" />
+    <link rel="shortcut icon" href="/imagenes/Logo.gif" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Poppins:wght@300;400;600&family=Ubuntu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/fontawesone/all.css" />
+    <link rel="stylesheet" href="/css/fontawesone/regular.css" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/estilo.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pagina Inmobiliaria</title>
-  <meta name="description" content="PARA INMOBILIARIA" />
-  <meta name="author" content="Robert Ocampo" />
-  <meta name="keywords" content="Robert Ocampo" />
-  <link rel="shortcut icon" href="/imagenes/Logo.gif" type="image/x-icon" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Poppins:wght@300;400;600&family=Ubuntu:wght@400;700&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="/css/fontawesone/all.css" />
-  <link rel="stylesheet" href="/css/fontawesone/regular.css" />
-  <link rel="stylesheet" href="/css/normalize.css" />
-  <link rel="stylesheet" href="/css/estilo.css" />
-</head>
-
-<body>
-  <!--Inicio del Header Logo, menu, ingreso-->
-  <header class="header">
-    <div class="contenedor header">
-      <div class="logo">
-        <img src="/imagenes/Logo.gif" alt="logo" />
+  <body>
+    <!--Inicio del Header Logo, menu, ingreso-->
+    <header class="header">
+      <div class="contenedor header">
+        <div class="logo">
+          <img src="/imagenes/Logo.gif" alt="logo" />
+        </div>
+        <nav class="menu">
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Propiedades</a></li>
+            <li><a href="#">Contactanos</a></li>
+          </ul>
+        </nav>
+        <div class="ingreso">
+          <ul>
+            <li><a href="#">Mi Lista</a></li>
+            <li>
+              <button type="submit" class="boton" value="Ingresar">
+                <i class="fa-solid fa-right-to-bracket"></i>Ingresar
+              </button>
+            </li>
+          </ul>
+        </div>
       </div>
-      <nav class="menu">
-        <ul>
-          <li>Inicio</li>
-          <li>Acerca</li>
-          <li>Servicios</li>
-          <li>Blog</li>
-          <li>Propiedades</li>
-          <li>Contactanos</li>
-        </ul>
-      </nav>
-      <div class="ingreso">
-        <ul>
-          <li>Mi Lista</li>
-          <li><a class="boton" href=""><i class="fa-solid fa-right-to-bracket"></i></i>Ingresar</a></li>
-        </ul>
+    </header>
+    <!--Termina sección del header-->
+    <!--Inicia sección de la Imagen y busqueda-->
+    <section class="sub-header">
+      <div class="cont-sub-header">
+        <div class="titulo">
+          <h1>Buscas Una Propiedad</h1>
+          <p>
+            Aqui encontraras Tu nueva o próxima propiedad en la localidad de Tu
+            preferencia
+          </p>
+        </div>
+        <div class="buscar">
+          <form action="" class="form-buscar">
+            <div class="tipo-busqueda">
+              <label for="">Ciudad/Dirección</label>
+              <input type="text" placeholder="Localidad" />
+            </div>
+            <div class="tipo-busqueda">
+              <label for="">Tipo/Propiedad</label>
+              <input type="text" placeholder="Tipo Propiedad" />
+            </div>
+            <div class="tipo-busqueda">
+              <label for="">Rango de Precio</label>
+              <input type="text" placeholder="Rango de precio" />
+            </div>
+            <div class="busqueda-avanzada">
+              <p>Busqueda Avanzada</p>
+              <li>
+                <a href="#"
+                  ><img src="/imagenes/iconos/buscar.png" alt="buscar"
+                /></a>
+              </li>
+            </div>
+          </form>
+        </div>
       </div>
-    </div>
-
-  </header>
-  <!--Termina sección del header-->
-  <!--Inicia sección de la Imagen y busqueda-->
-  <section class="sub-header">
-    <div class="cont-sub-header">
+    </section>
+    <!--Termina sección de imagen y busqueda-->
+    <!--Sección de resumen propiedades-->
+    <section class="resume-prop">
       <div class="titulo">
-        <h1>Buscas Una Propiedad</h1>
-        <p>
-          Aqui encontraras Tu nueva o próxima propiedad en la localidad de Tu
-          preferencia
-        </p>
+        <h3>Propiedades Destacadas</h3>
+        <p>Buscar Todo Tipo de Propiedad</p>
       </div>
-      <div class="buscar">
-        <form action="" class="form-buscar">
-          <div class="tipo-busqueda">
-            <label for="">Ciudad/Dirección</label>
-            <input type="text" placeholder="Localidad" />
-          </div>
-          <div class="tipo-busqueda">
-            <label for="">Tipo/Propiedad</label>
-            <input type="text" placeholder="Tipo Propiedad" />
-          </div>
-          <div class="tipo-busqueda">
-            <label for="">Rango de Precio</label>
-            <input type="text" placeholder="Rango de precio" />
-          </div>
-          <div class="busqueda-avanzada">
-            <p>Busqueda Avanzada</p>
-            <li><img src="/imagenes/iconos/buscar.png" alt="buscar" /></li>
-          </div>
-
-        </form>
+      <div class="res-propiedades">
+        <div class="tarjeta">
+          <a href="#">
+            <img
+              src="/imagenes/iconos/casaPlaya.png"
+              width="50%"
+              alt="vacacional"
+            />            
+            <h5>Casa Vacacional</h5>
+            <p>80 propiedades</p>
+          </a>
+        </div>
+        <div class="tarjeta">
+          <a href="#">
+            <img src="/imagenes/iconos/casa.png" width="50%" alt="casas" />
+            <h5>Casas</h5>
+            <p>120 propiedades</p>
+          </a>
+        </div>
+        <div class="tarjeta">
+          <a href="#">
+            <img
+              src="/imagenes/iconos/departamentos.png"
+              width="50%"
+              alt="departamentos"
+            />
+            <h5>Departamentos</h5>
+            <p>200 propiedades</p>
+          </a>
+        </div>
+        <div class="tarjeta">
+          <a href="#">
+            <img
+              src="/imagenes/iconos/oficina.png"
+              width="50%"
+              alt="Oficina y Estudio"
+            />
+            <h5>Oficina y Estudio</h5>
+            <p>50 propiedades</p>
+          </a>
+        </div>
+        <div class="tarjeta">
+          <a href="#">
+            <img src="/imagenes/iconos/villa.png" width="40%" alt="villa" />
+            <h5>Villa y Condominios</h5>
+            <p>100 propiedades</p></a
+          >
+        </div>
       </div>
-    </div>
-
-  </section>
-  <!--Termina sección de imagen y busqueda-->
-  <!--Sección de resumen propiedades-->
-  <section class="resume-prop">
-    <div class="titulo">
-      <h3>Propiedades Destacadas</h3>
-      <p>Buscar Todo Tipo de Propiedad</p>
-    </div>
-    <div class="res-propiedades">
-      <div class="tarjeta">
-        <img src="/imagenes/iconos/casaPlaya.png" alt="vacacional" />
-        <h5>Casa Vacacional</h5>
-        <p>80 propiedades</p>
+    </section>
+    <!--Fin sección resume propiedades-->
+    <!--Inicio sección de venta y arriendo de propiedades-->
+    <section class="propiedades">
+      <div class="titulo-prop">
+        <h3>Propiedades Recientes</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit earum in dicta numquam quibusdam modi minima, eos atque iure nihil doloremque quos dolores, possimus vitae ut temporibus vero consequatur accusantium?</p>
       </div>
-      <div class="tarjeta">
-        <img src="/imagenes/iconos/casa.png" alt="casas" />
-        <h5>Casas</h5>
-        <p>120 propiedades</p>
+     <!--Bloque 1-->
+      <div class="contenedor tarjeta-propiedades">
+        <div class="sub-tarjeta-propiedades">
+          <a href="#">
+            <img src="/imagenes/casa/venta/casa1.jpg" alt="venta1" />
+          </a>
+            <div class="texto-propiedad">
+              <div class="venta">
+                <h6>Venta</h6>
+                <p>&#128156</p>
+              </div>
+              <div>
+                <h5>Casa 2 pisos con piscina</h5>
+                <p><i class="fa-sharp fa-regular fa-location-dot"></i>San Sebastián, Loja</p>
+              </div>              
+            </div>
+            <div class="precio">
+              <button type="submit" class="boton-sec" value="Precio">$ 110.000,00
+              </button>
+              <p>Casa</p>
+            </div>        
+        </div>
+        <div class="sub-tarjeta-propiedades cont-prop">
+          <a href="#">
+            <img src="/imagenes/departamento/arriendo/depararri1.jpg" alt="arriendo1" />
+          </a>
+            <div class="texto-propiedad">
+              <div class="arriendo">
+                <h6>Arriendo</h6>
+                <p>&#128156</p>
+              </div>
+              <div>
+                <h5>Casa en Arriendo</h5>
+                <p><i class="fa-sharp fa-regular fa-location-dot"></i>Esteban Godoy, Loja</p>
+              </div>              
+            </div>
+            <div class="precio">
+              <button type="submit" class="boton-sec" value="Precio">$ 1.000,00
+              </button>
+              <p>Departamento</p>
+            </div>        
+        </div>
+        <div class="sub-tarjeta-propiedades cont-prop">
+          <a href="#">
+            <img src="/imagenes/casa/venta/casa2.jpg" alt="venta2" />
+          </a>
+            <div class="texto-propiedad">
+              <div class="venta">
+                <h6>Venta</h6>
+                <p>&#128156</p>
+              </div>
+              <div>
+                <h5>Casa Rentera</h5>
+                <p><i class="fa-sharp fa-regular fa-location-dot"></i>Argelia, Loja</p>
+              </div>              
+            </div>
+            <div class="precio">
+              <button type="submit" class="boton-sec" value="Precio">$ 77.000,00
+              </button>
+              <p>Casa</p>
+            </div>        
+        </div>
       </div>
-      <div class="tarjeta">
-        <img src="/imagenes/iconos/departamentos.png" alt="departamentos" />
-        <h5>Departamentos</h5>
-        <p>200 propiedades</p>
+      <!--BLOQUE 2-->
+      <div class="contenedor tarjeta-propiedades">
+        <div class="sub-tarjeta-propiedades cont-prop">
+          <a href="#">
+            <img src="/imagenes/casa/venta/casa3.jpg" alt="venta3" />
+          </a>
+            <div class="texto-propiedad">
+              <div class="arriendo">
+                <h6>Arriendo</h6>
+                <p>&#128156</p>
+              </div>
+              <div>
+                <h5>Villa Vacacional</h5>
+                <p><i class="fa-sharp fa-regular fa-location-dot"></i>Malacatos, Loja</p>
+              </div>              
+            </div>
+            <div class="precio">
+              <button type="submit" class="boton-sec" value="Precio">$ 800,00
+              </button>
+              <p>Villa</p>
+            </div>        
+        </div>
+        <div class="sub-tarjeta-propiedades cont-prop">
+          <a href="#">
+            <img src="/imagenes/departamento/venta/departamento3.jpg" alt="venta3"/>
+          </a>
+            <div class="texto-propiedad">
+              <div class="venta">
+                <h6>Venta</h6>
+                <p>&#128156</p>
+              </div>
+              <div>
+                <h5>Departamento 4 habitaciones</h5>
+                <p><i class="fa-sharp fa-regular fa-location-dot"></i>Tebaida, Loja</p>
+              </div>              
+            </div>
+            <div class="precio">
+              <button type="submit" class="boton-sec" value="Precio">$ 85.000,00
+              </button>
+              <p>Departamento</p>
+            </div>        
+        </div>
+        <div class="sub-tarjeta-propiedades cont-prop">
+          <a href="#">
+            <img src="/imagenes/casa/arriendo/casaarriendo2.jpg" alt="arriendo2" />
+          </a>
+            <div class="texto-propiedad">
+              <div class="arriendo">
+                <h6>Arriendo</h6>
+                <p>&#128156</p>
+              </div>
+              <div>
+                <h5>Casa en Arriendo</h5>
+                <p><i class="fa-sharp fa-regular fa-location-dot"></i>Vilcabamba, Loja</p>
+              </div>              
+            </div>
+            <div class="precio">
+              <button type="submit" class="boton-sec" value="Precio">$ 1.200,00
+              </button>
+              <p>Casa</p>
+            </div>        
+        </div>
       </div>
-      <div class="tarjeta">
-        <img src="/imagenes/iconos/oficina.png" alt="Oficina y Estudio" />
-        <h5>Oficina y Estudio</h5>
-        <p>50 propiedades</p>
+      <!--FIN BLOQUE PROPIEDADES-->
+    </section>
+    <!--Fin sección de venta y arriendo de propiedades-->
+    <section class="contenido">
+      <div class="contenido1">
+        <h1>Resultados</h1>
       </div>
-      <div class="tarjeta">
-        <img src="/imagenes/iconos/villa.png" alt="villa" />
-        <h5>Villa</h5>
-        <p>100 propiedades</p>
-      </div>
-    </div>
-  </section>
-  <!--Fin sección resume propiedades-->
-  <section class="propiedades">
-    <div>
-      <h3>Lista de propiedades</h3>
-    </div>
-  </section>
-
-  <script src="/js/main.js"></script>
-</body>
-
+    </section>
+    <script src="/js/main.js"></script>
+  </body>
 </html>
