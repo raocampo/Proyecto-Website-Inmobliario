@@ -353,7 +353,6 @@ img{
 }
 /*Seccio Testimonios*/
 .testimonios{
-    
     display: flex;
     flex-direction: column;
     background-color: #182745;
@@ -367,9 +366,9 @@ img{
 }
 .testimonios p{
     color: #fff;
-    /*margin-top: -3rem;*/
-    margin-bottom: 3rem;
-    font-size: 1rem;
+    margin-top: -4rem;
+    margin-bottom: 6rem;
+    font-size: 1.7rem;
     text-align: center;
 }
 .contenido-testimonios{
@@ -381,27 +380,83 @@ img{
 }
 .tarjeta-testimonio{
     width: 75%;
-    border: #3a3b37 1px solid;
+    border: #24304f 0.2rem solid;
+    border-radius: 10rem 0;
+    margin: 5rem 0;
 }
+.tarjeta-testimonio:hover{
+    background-color: #8fb436;
+}
+
 
 .imagen-circular {
     position: relative;
-    width: 20rem;
-    height: 20rem;
+    top: -8rem;
+    left: 13rem;
+    right: 0;
+    bottom: 0;
+    width: 15rem;
+    height: 15rem;
     overflow: hidden;
+    border: #8fb436 solid 0.5rem;
     border-radius: 50%;
+}
+.imagen-circular:hover{
+    border: #fff solid 0.5rem;
 }
 .imagen-circular img{
     width: 100%;
     height: auto;
 }
+.texto-testimonio{
+    margin-top: -7rem;
+}
+.texto-testimonio h3{
+    margin: 0;
+}
+.texto-testimonio h5{
+    margin-top: -5rem;
+    margin-bottom: 2rem;
+    padding: 3rem;
+}
+.texto-testimonio p{
+    text-align: justify;
+    font-size: 1.7rem;
+    padding: 2rem;
+    margin-bottom: 0;
+}
+.estrellas{
+    display: inline-block;
+    padding-bottom: 3rem;
+}
 
 
-
-/*Seccion Premios y Resultados*/
-.contenido{
-    margin: -3.2rem;
-    background-color: #182745;
+/*Seccion Redes*/
+.redes-sociales{
+    background-color: #8eb43642;
+    display: flex;
+}
+.contenido-redes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     text-align: center;
     color: #fff;
+}
+.logo img{
+    max-width: 10rem ;
+}
+.iconos-redes{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    font-size: 2.5rem;
+}
+.icono-footer{
+    background-color: #182745;
+    padding: 0.8rem 2.2rem;
+    border-radius: 50%;
+}
+.fa-facebook-f{
+    color:#fff;
 }
