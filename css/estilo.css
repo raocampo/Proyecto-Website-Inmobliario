@@ -453,16 +453,120 @@ img{
     font-size: 2rem;
 }
 .icono-footer{
+    width: 5rem;
+    height: 5rem;
     background-color: #182745;
-    padding: 0.2rem 1.4rem;
-    border-radius: 50%;
+    padding-top: 0.5rem;
+    border-radius: 15%;
 }
-.facebook{
-    background-color: #182745;
-    padding: 1rem 2.5rem;
-    border-radius: 50%;
+.icono-footer:hover{
+    background-color: #8fb436;
+    
 }
-.fa-facebook-f, .fa-x-twitter, .fa-instagram{
-    color:#fff;
+.icono-footer a{
+    color: #fff;
 }
 
+/*SECCIÓN AUSPICIANTES*/
+
+.auspiciantes{
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #18274515;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+.auspiciantes p{
+    margin-top: -6rem;
+    margin-bottom: 2rem;
+    color: #8fb436;
+}
+.contenido-auspiciantes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+}
+.logo-auspiciante img{
+    margin: 0 auto;
+    padding: 0;
+    line-height: 0;
+}
+
+/*SECCIÓN NEWSLETTER*/
+
+.newsletter{
+    display: flex;
+    background-color: #182745;
+    padding: 4rem 0;
+}
+.sub-newsletter{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+.par-newsletter{
+    margin: 2rem 0;
+}
+.direccion h6{
+    font-size: 2rem;
+    color: #ffffff;
+}
+.direccion p{
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: justify;
+}
+.fa-phone-volume, .fa-mobile, .fa-envelope{
+    margin-right: 1rem;
+}
+
+.formulario input[type="text"]{
+    background-color: transparent;
+    color: #fff;
+    padding: 1rem;
+    border: #24304f 0.2rem solid;
+    border-radius: 1rem 1rem;
+}
+.formulario a{
+    text-decoration: none;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: #8fb436;
+    color: #fff;
+}
+
+/*SECCIÓN FOOTER*/
+.footer{
+    background-color: #182745;
+    display: flex;
+    align-items: center;
+    padding: 4rem;
+    border-top: #24304f 0.2rem solid;
+}
+.footer p{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 900;
+    color: #fff;
+}
+.footer span{
+    font-size: 1rem;
+    color: #8fb436
+}
+.cont-footer{
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+    color: #fff;
+}
+.menu-footer a{
+    text-decoration: none;
+    padding-left: 2rem;
+    color: #ffffff;
+}
+.menu-footer a:hover{
+    color: #8fb436;
+}
