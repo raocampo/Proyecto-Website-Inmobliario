@@ -86,6 +86,9 @@ img{
     color: #fff;
     border-radius: 1rem;
 }
+@media screen {
+    
+}
 .ingreso ul li{
     display: inline;
     list-style: none;
