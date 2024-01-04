@@ -56,25 +56,26 @@ img{
 
 .header{
     display: flex;
+    
+}
+.cont-header{
+    width: 100%;
+    display: flex;
     justify-content: space-evenly;
     align-items: center;
     background-color: #8fb436;
+    gap: 2rem;
 }
 .logo{
     width: 12rem;
-    margin: 1rem;
+    padding: 1rem;
 }
 
 .menu{
     display: flex;
-}
-.menu ul li{
-    display: inline;
-    list-style: none;
-    font-family: 'Lato', sans-serif;
-    font-weight: 600;
-    color: #182745;
-    margin-left: 2rem;    
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
 }
 .menu a{
     text-decoration: none;
@@ -89,6 +90,7 @@ img{
 .menu-icon{
     font-size: 3rem;
     cursor: pointer;
+    
 }
 .menu-icon:hover{
     color: #fff;
@@ -133,17 +135,14 @@ img{
         display: none;
     }
 }
-@media (min-width: 1024px){
+@media (min-width: 769px){
     .menu-mobile{
         display: none;
     }
    
 }
 .ingreso{
-    width: 200px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    width: 100px;
 }
 .ingreso ul li{
     list-style: none;
@@ -177,22 +176,25 @@ img{
 .fa-right-to-bracket{
     margin-right: 1rem;
 }
-
-.ingreso img{
-    width: 80%;
+.submenu{
+    width: 60px;
 }
-@media (max-width: 768px ) {
 
-    .ingreso img{
-        width: 100%;
+/*.submenu img{
+    width: %;
+}
+/*@media (max-width: 768px ) {
+
+    .submenu img{
+        width: 20rem;
     }
 }
 @media (min-width: 1024px){
-    .ingreso img{
-        width: 100%;
+    .submenu img{
+        width: 80%;
     }
    
-}
+}*/
 #vaciar{
     width: 100%;
     text-align: center;

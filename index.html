@@ -25,50 +25,56 @@
   <body>
     <!--Inicio del Header Logo, menu, ingreso-->
     <header class="header">
-      <div class="contenedor header">
+      <div class="cont-header">
         <div class="logo">
           <a href="index.html"><img src="imagenes/Logo.gif" alt="logo" /></a>
         </div>
 
         <nav class="menu">
-                         
-          <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="quieneSomos.html">Acerca</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="propiedades.html">Propiedades</a></li>
-            <li><a href="contacto.html">Contactanos</a></li>
-          </ul>  
-          
+          <a href="index.html">Inicio</a>
+          <a href="quieneSomos.html">Acerca</a>    
+          <a href="servicios.html">Servicios</a>    
+          <a href="blog.html">Blog</a>
+          <a href="propiedades.html">Propiedades</a>
+          <a href="contacto.html">Contactanos</a>
+         <!--<ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>  --> 
         </nav>
 
-        <div class="ingreso">
-          <div>
-            <label for="lista" class="carrito-img">
-              <img src="imagenes/iconos/anadir-al-carrito.png" alt="">
-            </label>
-            <input type="checkbox" id="lista" class="lista_checkbox">
-            <div id="carrito" class="lista-carro">
-               <table id="lista-carrito" class="tabla">
-                   <thead>
-                       <tr>
-                           <th>Imagen</th>
-                           <th>Nombre</th>
-                           <th>Precio</th>
-                           <th>Cantidad</th>
-                           <th></th>
-                       </tr>
-                   </thead>
-                   <tbody></tbody>
-               </table>
-               <a href="#" id="vaciar" class="boton">limpiar</a>
-            </div>
+        <div class="submenu">
+          <label for="lista" class="carrito-img">
+            <img src="imagenes/iconos/anadir-al-carrito.png" alt="">
+          </label>
+          <input type="checkbox" id="lista" class="lista_checkbox">
+          <div id="carrito" class="lista-carro">
+             <table id="lista-carrito" class="tabla">
+                 <thead>
+                     <tr>
+                         <th>Imagen</th>
+                         <th>Nombre</th>
+                         <th>Precio</th>
+                         <th>Cantidad</th>
+                         <th></th>
+                     </tr>
+                 </thead>
+                 <tbody></tbody>
+             </table>
+             <a href="#" id="vaciar" class="boton">limpiar</a>
           </div>
+        </div>
+
+        <div class="ingreso">
           <ul>
             <li>
-              <button type="submit" class="boton btn-ingresa" value="Ingresar">
-                <i class="fa-solid fa-right-to-bracket"></i>Ingresar
+              
+              <button type="submit" class="boton btn-ingresa" value="Ingresar"><i class="fa-solid fa-right-to-bracket"></i>
+                Ingresar
               </button>
             </li>
           </ul>
