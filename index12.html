@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/regular.min.css" integrity="sha512-rOTVxSYNb4+/vo9pLIcNAv9yQVpC8DNcFDWPoc+gTv9SLu5H8W0Dn7QA4ffLHKA0wysdo6C5iqc+2LEO1miAow==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/solid.min.css" integrity="sha512-P9pgMgcSNlLb4Z2WAB2sH5KBKGnBfyJnq+bhcfLCFusrRc4XdXrhfDluBl/usq75NF5gTDIMcwI1GaG5gju+Mw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/estilo.css" />
   </head>
 
   <body>
@@ -27,7 +27,7 @@
     <header class="header">
       <div class="contenedor header">
         <div class="logo">
-          <a href="index.html"><img src="imagenes/Logo.gif" alt="logo" /></a>
+          <a href="index.html"><img src="/imagenes/Logo.gif" alt="logo" /></a>
         </div>
 
         <nav class="menu">
@@ -44,30 +44,10 @@
         </nav>
 
         <div class="ingreso">
-          <div>
-            <label for="lista" class="carrito-img">
-              <img src="imagenes/iconos/anadir-al-carrito.png" alt="">
-            </label>
-            <input type="checkbox" id="lista" class="lista_checkbox">
-            <div id="carrito" class="lista-carro">
-               <table id="lista-carrito" class="tabla">
-                   <thead>
-                       <tr>
-                           <th>Imagen</th>
-                           <th>Nombre</th>
-                           <th>Precio</th>
-                           <th>Cantidad</th>
-                           <th></th>
-                       </tr>
-                   </thead>
-                   <tbody></tbody>
-               </table>
-               <a href="#" id="vaciar" class="boton">limpiar</a>
-            </div>
-          </div>
           <ul>
+            <li><a href="#">Mi Lista</a></li>
             <li>
-              <button type="submit" class="boton btn-ingresa" value="Ingresar">
+              <button type="submit" class="boton" value="Ingresar">
                 <i class="fa-solid fa-right-to-bracket"></i>Ingresar
               </button>
             </li>
@@ -187,7 +167,7 @@
     </section>
     <!--Fin sección resume propiedades-->
     <!--Inicio sección de venta y arriendo de propiedades-->
-    <section id="lista-prop" class="propiedades">
+    <section class="propiedades">
       <div class="contenedor cont-propiedades">
         <div class="titulo-prop">
           <h3>Propiedades Recientes</h3>
@@ -196,7 +176,7 @@
        <!--Bloque 1-->
         <div class="contenedor tarjeta-propiedades">
           <div class="sub-tarjeta-propiedades">
-            <a href="#" data-id="1">
+            <a href="#">
               <img src="imagenes/casa/venta/casa1.jpg" alt="venta1" />
             </a>
               <div class="texto-propiedad">
@@ -210,13 +190,13 @@
                 </div>              
               </div>
               <div class="precio">
-                <button type="submit" class="boton-sec agregar-prop" value="Precio">$ 110.000,00
+                <button type="submit" class="boton-sec" value="Precio">$ 110.000,00
                 </button>
                 <p>Casa</p>
               </div>        
           </div>
           <div class="sub-tarjeta-propiedades cont-prop">
-            <a href="#" data-id="2">
+            <a href="#">
               <img src="imagenes/departamento/arriendo/depararri1.jpg" alt="arriendo1" />
             </a>
               <div class="texto-propiedad">
@@ -230,14 +210,13 @@
                 </div>              
               </div>
               <div class="precio">
-                <a href="#" data-id="2"><button type="submit" class="boton-sec agregar-prop" value="Precio">$ 1.000,00
-                </button></a>
-                
+                <button type="submit" class="boton-sec" value="Precio">$ 1.000,00
+                </button>
                 <p>Departamento</p>
               </div>        
           </div>
           <div class="sub-tarjeta-propiedades cont-prop">
-            <a href="#" data-id="3">
+            <a href="#">
               <img src="imagenes/casa/venta/casa2.jpg" alt="venta2" />
             </a>
               <div class="texto-propiedad">
@@ -251,9 +230,8 @@
                 </div>              
               </div>
               <div class="precio">
-                <a href="#" data-id="3"><button type="submit" class="boton-sec agregar-prop" value="Precio">$ 77.000,00
-                </button></a>
-                
+                <button type="submit" class="boton-sec" value="Precio">$ 77.000,00
+                </button>
                 <p>Casa</p>
               </div>        
           </div>
@@ -261,7 +239,7 @@
         <!--BLOQUE 2-->
         <div class="contenedor tarjeta-propiedades">
           <div class="sub-tarjeta-propiedades cont-prop">
-            <a href="#" data-id="4">
+            <a href="#">
               <img src="imagenes/casa/venta/casa3.jpg" alt="venta3" />
             </a>
               <div class="texto-propiedad">
@@ -275,13 +253,13 @@
                 </div>              
               </div>
               <div class="precio">
-                <button type="submit" class="boton-sec agregar-prop" value="Precio">$ 800,00
+                <button type="submit" class="boton-sec" value="Precio">$ 800,00
                 </button>
                 <p>Villa</p>
               </div>        
           </div>
           <div class="sub-tarjeta-propiedades cont-prop">
-            <a href="#" data-id="5">
+            <a href="#">
               <img src="imagenes/departamento/venta/departamento3.jpg" alt="venta3"/>
             </a>
               <div class="texto-propiedad">
@@ -295,13 +273,13 @@
                 </div>              
               </div>
               <div class="precio">
-                <a href="#" data-id="5"><button type="submit" class="boton-sec agregar-prop" value="Precio">$ 85.000,00
-                </button></a>
+                <button type="submit" class="boton-sec" value="Precio">$ 85.000,00
+                </button>
                 <p>Departamento</p>
               </div>        
           </div>
           <div class="sub-tarjeta-propiedades cont-prop">
-            <a href="#" data-id="6">
+            <a href="#">
               <img src="imagenes/casa/arriendo/casaarriendo2.jpg" alt="arriendo2" />
             </a>
               <div class="texto-propiedad">
@@ -315,8 +293,8 @@
                 </div>              
               </div>
               <div class="precio">
-                <a href="#" data-id="6"><button type="submit" class="boton-sec agregar-prop" value="Precio">$ 1.200,00
-                </button></a>
+                <button type="submit" class="boton-sec" value="Precio">$ 1.200,00
+                </button>
                 <p>Casa</p>
               </div>        
           </div>

@@ -137,14 +137,19 @@ img{
     .menu-mobile{
         display: none;
     }
-} 
+   
+}
+.ingreso{
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 .ingreso ul li{
-    display: inline;
     list-style: none;
     font-family: 'Lato', sans-serif;
     font-weight: 600;
     color: #182745;
-    margin-left: 2rem;
 }
 
 .ingreso a{
@@ -162,6 +167,7 @@ img{
     .ingreso{
         padding-right: 4rem;
     }
+    
 }
 .ingreso a:hover{
     color: #fff;
@@ -172,6 +178,68 @@ img{
     margin-right: 1rem;
 }
 
+.ingreso img{
+    width: 80%;
+}
+@media (max-width: 768px ) {
+
+    .ingreso img{
+        width: 100%;
+    }
+}
+@media (min-width: 1024px){
+    .ingreso img{
+        width: 100%;
+    }
+   
+}
+#vaciar{
+    width: 100%;
+    text-align: center;
+    color: #8fb436;
+}
+#vaciar:hover{
+    color: #fff;
+}
+
+.lista_checkbox{
+    display: none;
+}
+.lista-carro{
+    position: fixed;
+    top: 12rem;
+    right: 0;
+    height: 70rem;
+    width: 50%;
+    background: #8eb436be;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    z-index: 1;
+    transform: translate(100%);
+    transition: .4s transform;
+}
+.carrito-img{
+    cursor: pointer;
+}
+:checked + *{
+    transform: translate(0);
+}
+
+.tabla{
+    width: 100%;
+    height: 100vh;
+}
+
+.borrar-prop{
+    background-color: #0d1741;
+    border-radius: 40%;
+    padding: 1rem;
+    
+}
+.lista-carro a{
+    color: #8fb436;
+}
 /*SECCION HERO*/
 
 .hero{
@@ -755,36 +823,4 @@ img{
     .cont-hero-pag{
         top: 8rem;
     }
-}
-
-.cont-acerca{
-    width: 100%;
-    height: 90rem;
-    /*display: flex;
-    flex-direction: column;*/
-    background-color: #8eb43642;
-    /*text-align: center;*/
-    margin-top: -5rem;
-}
-
-.tarjeta-acerca img{
-    display: block;
-    margin: 0 auto;
-    margin-top: 5rem;
-    background-color: #8eb43642;
-}
-
-.tarjeta-acerca{
-    background-color: #fff;
-    margin: 0 auto;
-    width: 80%;
-}
-.tarjeta-acerca h3{
-    font-size: 4rem;
-}
-.tarjeta-acerca p{
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: #8fb436;
-    text-align: center;
 }
