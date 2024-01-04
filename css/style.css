@@ -144,6 +144,12 @@ img{
 .ingreso{
     width: 100px;
 }
+@media (max-width: 768px ) {
+
+    .ingresa{
+        display: none;
+    }
+}
 .ingreso ul li{
     list-style: none;
     font-family: 'Lato', sans-serif;
